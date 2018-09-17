@@ -1,0 +1,40 @@
+html, body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	background: $bg-color;
+}
+img{max-width: 100%;}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+.btn{
+	margin-top: 1em;
+	padding: 0.5em;
+    border-radius: 2px;
+    box-shadow: none;
+    border: none;
+}
+.btn-primary{
+	background-color: $secondary-color;
+}
+
+.input-group{
+	width: 100%;
+    text-align: left;
+    label, input{display: block;}
+    &+.input-group{padding-top: 1em;}
+    label{
+    	padding-bottom: 0.3em;
+    	text-transform: capitalize;
+    }
+    input{
+    	border: none;
+	    padding: 0.5em;
+	    height: 1.5em;
+	    border-radius: 2px;
+	    min-width: 20em;
+    }
+}

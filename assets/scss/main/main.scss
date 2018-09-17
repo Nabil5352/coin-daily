@@ -1,0 +1,17 @@
+#home{
+	width: 100%;
+	display: table;
+	#home-bg, .form{
+		display: table-cell;
+		margin: 0 auto;
+		text-align: center;
+		width: 48%;
+    	padding: 1%;
+    	vertical-align: middle;
+    	height: calc(100vh - 2%);
+	}
+	.form{padding-left: 15%;}
+}
+#home-bg img{
+	height: calc(100vh - 4em);
+}
