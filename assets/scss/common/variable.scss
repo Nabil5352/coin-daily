@@ -6,6 +6,10 @@ $primay-color: #FF923A;
 $secondary-color: #FFDA70;
 $title-color: #29230f;
 
+// dashboard
+$sidebar-bg: #364252;
+$text-color: #9DAABC;
+
 // mixin
 @mixin box-shadow($h-offset, $v-offset, $blur, $spread, $color){
 	-o-box-shadow: $h-offset $v-offset $blur $spread $color;
