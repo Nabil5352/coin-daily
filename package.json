@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eslint --ext .js,.vue src --fix webpack --config build/webpack.config.dev.js",
+    "build": "webpack --config build/webpack.config.dev.js",
     "dev": "webpack-dev-server --config build/webpack.config.dev.js",
     "lint": "eslint --ext .js,.vue src",
     "lint:fix": "eslint --ext .js,.vue src --fix",
@@ -14,13 +14,14 @@
   "author": "Nabil Ahmad",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.1.0",
     "@vue/test-utils": "^1.0.0-beta.25",
-    "babel-core": "^6.26.3",
     "babel-eslint": "^9.0.0",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.2",

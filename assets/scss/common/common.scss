@@ -2,7 +2,6 @@ html, body{
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
 	line-height: 1.5em;
-	background: $bg-color;
 }
 img{max-width: 100%;}
 
@@ -11,11 +10,13 @@ img{max-width: 100%;}
 .text-right{text-align: right;}
 
 .btn{
+    cursor: pointer;
 	margin-top: 1em;
 	padding: 0.5em;
     border-radius: 2px;
     box-shadow: none;
     border: none;
+    @include box-shadow(0px, 4px, 10px, 0px, rgba(0, 0, 0, 0.4));
 }
 .btn-primary{
 	background-color: $secondary-color;
@@ -35,6 +36,6 @@ img{max-width: 100%;}
 	    padding: 0.5em;
 	    height: 1.5em;
 	    border-radius: 2px;
-	    min-width: 20em;
+	    min-width: 25em;
     }
 }
