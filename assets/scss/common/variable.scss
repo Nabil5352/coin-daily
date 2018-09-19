@@ -19,3 +19,9 @@ $active-bg: #313B4A;
 	-webkit-box-shadow: $h-offset $v-offset $blur $spread $color;
 	box-shadow: $h-offset $v-offset $blur $spread $color;
 }
+@mixin transition-universal($value){
+	-webkit-transition: $value;
+	-moz-transition: $value;
+	-o-transition: $value;
+	transition: $value;
+}
