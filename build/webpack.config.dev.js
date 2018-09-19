@@ -37,6 +37,7 @@ module.exports = {
 				use: [
 					'vue-style-loader',
 					'css-loader',
+					'resolve-url-loader',
 					'sass-loader'
 				]
 			},

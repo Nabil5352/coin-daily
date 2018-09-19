@@ -8,10 +8,6 @@
               <div class="wrapper">
                 <div class="img-wrap"><img src="/assets/img/home-bg.svg"></div>
                 <div class="title">Nabil Ahmad</div>
-                <div class="badge">
-                  <span class="name">default</span>
-                  <span class="value">usd</span>
-                </div>
               </div>
             </div><!--profile-->
             <div class="menu">
@@ -32,7 +28,7 @@
                     <li
                       key="3"
                       :class="{ active : isActiveClass(3) }"
-                      @click="setActiveLink(3)"><span><img src="/assets/img/calender.png"></span>&nbsp;&nbsp;<span>Last 31 days</span></li></router-link>
+                      @click="setActiveLink(3)"><span><img src="/assets/img/calender.png"></span>&nbsp;&nbsp;<span>History</span></li></router-link>
                 </ul>
               </div>
             </div><!--menu-->
@@ -45,7 +41,10 @@
                       key="4"
                       :class="{ active : isActiveClass(4) }"
                       @click="setActiveLink(4)"><span><img src="/assets/img/user.png"></span>&nbsp;&nbsp;<span>Your Profile</span></li></router-link>
-                  <li><span><img src="/assets/img/signout.png"></span>&nbsp;&nbsp;<span>Log Out</span></li>
+                  <li
+                    v-tippy="{ placement : 'left', arrow: true }"
+                    title="Disconnect"
+                  ><span><img src="/assets/img/signout.png"></span>&nbsp;&nbsp;<span>Log Out</span></li>
                 </ul>
               </div>
             </div><!--menu-->
@@ -62,6 +61,7 @@
     </div><!--dashboard-wrapper-->
   </div><!--#dashboard-home-->
 </template>
+
 <script>
 import TopBar from '../../components/TopBar.vue'
 import FixedFooter from '../../components/FixedFooter.vue'
@@ -76,12 +76,30 @@ export default {
 			activeUrl: 1 // 1=dashboard, 2=current price, 3=history, 4=profile
 		}
 	},
+	created () {
+		this.checkActiveUrl()
+	},
 	methods: {
 		setActiveLink (id) {
 			this.activeUrl = id
 		},
 		isActiveClass (id) {
 			return this.activeUrl === id
+		},
+		checkActiveUrl () {
+			let currentPath = this.$route.path
+			const currentUrl = currentPath.replace(/\//, '')	// remove leading slash
+			let activeUrl = 1
+			if (currentUrl === 'dashboard') {
+				activeUrl = 1
+			} else if (currentUrl === 'your-currency') {
+				activeUrl = 2
+			} else if (currentUrl === 'history') {
+				activeUrl = 3
+			} else if (currentUrl === 'profile') {
+				activeUrl = 4
+			}
+			this.activeUrl = activeUrl
 		}
 	}
 }
