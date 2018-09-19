@@ -1,6 +1,6 @@
 <template>
   <div>
-    Footer
+    YOUR CURRENCY
   </div>
 </template>
 <script>

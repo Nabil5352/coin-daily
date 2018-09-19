@@ -1,6 +1,6 @@
 <template>
   <div>
-    Header
+    History
   </div>
 </template>
 <script>

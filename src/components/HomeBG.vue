@@ -20,7 +20,7 @@
       </div>
       <div class="sign-in-note text-left">if you are not previously registered an account will be created automatically.</div>
       <div class="text-left"><img src="assets/img/loader.svg"></div>
-      <div class="text-left"><button class="btn btn-primary"><router-link to="/dashboard">Sign In</router-link></button></div>
+      <div class="text-left"><button class="btn btn-primary"><router-link :to="{name: 'dashboard'}">Sign In</router-link></button></div>
 
     </div>
   </div>
