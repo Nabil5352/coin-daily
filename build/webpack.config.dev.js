@@ -17,6 +17,7 @@ module.exports = {
 		'./src/app.js'
 	],
 	devServer: {
+		https: true,
 		hot: true,
 		watchOptions: {
 			poll: true

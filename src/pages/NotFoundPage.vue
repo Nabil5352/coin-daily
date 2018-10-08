@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-us full-screen">
+  <div class="contact-us full-screen error-page">
     <div class="wrapper wrapper-full-page section content">
       <div class="">
         <div class="container">

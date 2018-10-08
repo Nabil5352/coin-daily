@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
-
 // variable
 $bg-color: #e66e0c;
 $primay-color: #FF923A;
 $secondary-color: #FFDA70;
 $title-color: #29230f;
-
 // dashboard
 $sidebar-bg: #364252;
 $text-color: #9DAABC;
 $dashboard-title-color: #5B6B81;
 $active-bg: #313B4A;
-
 // mixin
 @mixin box-shadow($h-offset, $v-offset, $blur, $spread, $color){
 	-o-box-shadow: $h-offset $v-offset $blur $spread $color;

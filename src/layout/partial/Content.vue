@@ -40,7 +40,12 @@
                     <li
                       key="4"
                       :class="{ active : isActiveClass(4) }"
-                      @click="setActiveLink(4)"><span><img src="/assets/img/user.png"></span>&nbsp;&nbsp;<span>Your Profile</span></li></router-link>
+                      @click="setActiveLink(4)">
+                      <span><img src="/assets/img/user.png"></span
+                      >&nbsp;&nbsp;
+                      <span>Your Profile</span>
+                    </li>
+                  </router-link>
                   <li
                     v-tippy="{ placement : 'left', arrow: true }"
                     title="Disconnect"

@@ -27,3 +27,9 @@
 #home-bg img{
 	height: calc(100vh - 4em);
 }
+
+.error-page{
+	background: url('/assets/img/dashboard-bg.svg');
+	background-repeat: no-repeat;
+    background-size: cover;
+}

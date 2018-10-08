@@ -42,7 +42,7 @@ const routes = [
 		]
 	},
 	{
-		path: '/error',
+		path: '*',
 		name: 'error',
 		component: NotFound
 	}

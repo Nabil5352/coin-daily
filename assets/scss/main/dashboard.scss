@@ -148,4 +148,50 @@
 		}
 		@include box-shadow(0px, 4px, 10px, 0px, rgba(0, 0, 0, 0.4));
 	}
+	.profile-container{
+		text-align: center;
+    	line-height: 2em;
+
+		.img-wrap{
+			padding-bottom: 1em;
+			img{
+				height: 70px;
+				background: $sidebar-bg;
+				border-radius: 50%;
+				overflow: hidden;
+			}
+		}
+		.input-group{
+			text-align: center;
+		}
+		.input-group input,
+		.input-group select{
+			margin: 0 auto;
+			border: 1px solid lighten($sidebar-bg, 50%);
+			&:focus{
+				border: 1px solid lighten($sidebar-bg, 20%);
+				box-shadow: none;
+				outline: none;
+			}
+		}
+		button{
+			padding: 0.7em 2em;
+			height: 3em;
+    		box-shadow: none;
+    		border: 1px solid lighten($sidebar-bg, 40%);
+    		vertical-align: top;
+    		@include transition-universal(0.3s all ease-out)
+    		&:hover{border: 1px solid $secondary-color}
+    		&.btn-loader{
+    			padding: 0em 2em;
+    			img{height: 30px;}
+    		}
+		}
+		.err{
+			p{
+				font-size: 0.9em;
+				color: red;
+			}
+		}
+	}
 }

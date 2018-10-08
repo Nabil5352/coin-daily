@@ -17,9 +17,13 @@
       <li
         v-tippy="{ placement : 'top', arrow: true }"
         class="text-center"
-        title="Profile"><img
-          class="profile icon"
-          src="/assets/img/user-b.png"></li>
+        title="Profile">
+        <router-link :to="{ name: 'profile'}">
+          <img
+            class="profile icon"
+            src="/assets/img/user-b.png">
+        </router-link>
+      </li>
       <li
         v-tippy="{ placement : 'top', arrow: true }"
         class="text-center"
